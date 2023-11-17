@@ -12,3 +12,8 @@ header {
 #logo {
     height: 60px;
 }
+
+nav > ul > li {
+    display: inline;
+    margin: 10px;
+}
