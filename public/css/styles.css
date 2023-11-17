@@ -29,3 +29,7 @@ nav > ul > li {
 .objective > img {
     max-width: 500px;
 }
+
+#accommodations > ul > li {
+    display: inline;
+}
