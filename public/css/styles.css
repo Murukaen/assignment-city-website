@@ -25,3 +25,7 @@ nav > ul > li {
 #objectives > ul > li img {
     width: 100px;
 }
+
+.objective > img {
+    max-width: 500px;
+}
