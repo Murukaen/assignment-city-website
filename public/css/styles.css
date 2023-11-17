@@ -17,3 +17,11 @@ nav > ul > li {
     display: inline;
     margin: 10px;
 }
+
+#objectives > ul > li {
+    display: inline;
+}
+
+#objectives > ul > li > img {
+    width: 100px;
+}
