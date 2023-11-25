@@ -64,7 +64,11 @@ nav > ul > li {
 .row::after {
     content: "";
     clear: both;
-    display: table;
+display: table;
+}
+
+article {
+    padding: 0 10px;
 }
 
 @media only screen and (max-width: 768px) {
