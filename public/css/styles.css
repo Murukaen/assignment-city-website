@@ -33,6 +33,7 @@ nav > ul > li {
 
 #objectives [class*="col-"] p {
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .objective > img {
@@ -66,7 +67,9 @@ nav > ul > li {
 
 [class*="col-"] {
     float: left;
-    padding: 15px;
+    padding: 15px 15px 0;
+    height: 150px;
+    margin-top: 15px;
 }
 
 .row {
@@ -83,7 +86,14 @@ article {
     padding: 0 10px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 780px) {
+    /* For tabletss: */
+    [class*="col-"] {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
     /* For mobile phones: */
     [class*="col-"] {
         width: 100%;
