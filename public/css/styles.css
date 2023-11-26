@@ -24,8 +24,7 @@ nav > ul > li {
 }
 
 .row img {
-    max-height: 120px;
-    max-width: 160px;
+    height: 240px;
 }
 
 [class*="col-"] p {
@@ -65,11 +64,13 @@ nav > ul > li {
 [class*="col-"] {
     float: left;
     padding: 15px 15px 0;
-    height: 150px;
+    height: 300px;
     margin-top: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    overflow: clip;
+    overflow-clip-margin: content-box;
 }
 
 .row {
