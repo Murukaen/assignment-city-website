@@ -28,7 +28,11 @@ nav > ul > li {
 }
 
 #objectives img {
-    width: 100px;
+    width: 160px;
+}
+
+#objectives [class*="col-"] p {
+    margin-top: 0;
 }
 
 .objective > img {
