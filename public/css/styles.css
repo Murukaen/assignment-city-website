@@ -25,6 +25,7 @@ nav > ul > li {
 
 .row img {
     max-height: 120px;
+    max-width: 160px;
 }
 
 [class*="col-"] p {
