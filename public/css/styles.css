@@ -113,11 +113,19 @@ form > div {
     nav > ul {
         padding-left: 0;
     }
+
+    .objective > img {
+        max-width: 400px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
     /* For mobile phones: */
     [class*="col-"] {
         width: 100%;
+    }
+
+    .objective > img {
+        max-width: 200px;
     }
 }
