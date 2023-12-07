@@ -96,8 +96,8 @@ form > div {
     padding-bottom: 10px;
 }
 
-@media only screen and (max-width: 780px) {
-    /* For tabletss: */
+@media only screen and (max-width: 1024px) {
+    /* For tablets: */
     [class*="col-"] {
         width: 50%;
     }
