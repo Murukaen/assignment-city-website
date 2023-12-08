@@ -26,12 +26,12 @@
         <form>
             <div>
                 <label for="title">Titlu</label>
-                <input type="text" id="title">
+                <input type="text" id="title" name="title">
                 <p class="error" id="title-error"></p>
             </div>
             <div>
                 <label for="type">Tip</label>
-                <select id="type">
+                <select id="type" name="type">
                     <option value="general-questions">Intrebari generale</option>
                     <option value="site-func">Functionalitate site</option>
                     <option value="other">Altceva</option>
@@ -39,10 +39,10 @@
             </div>
             <div>
                 <label for="msg">Mesaj</label>
-                <textarea id="msg" rows="4" cols="50"></textarea>
+                <textarea id="msg" rows="4" cols="50" name="msg"></textarea>
                 <p class="error" id="msg-error"></p>
             </div>
-            <button onclick="window.submit()">Trimite</button>
+            <button type="button" onclick="window.validateAndSubmit()">Trimite</button>
         </form>
     </article>
 </body>
