@@ -20,8 +20,29 @@
             </ul>
         </nav>
     </header>
-    <article>
+    <article id="contact">
         <h2>Contact</h2>
+        <form>
+            <div>
+                <label for="title">Titlu</label>
+                <input type="text" id="title">
+                <p class="error" id="title-error"></p>
+            </div>
+            <div>
+                <label for="type">Tip</label>
+                <select id="type">
+                    <option value="general-questions">Intrebari generale</option>
+                    <option value="site-func">Functionalitate site</option>
+                    <option value="other">Altceva</option>
+                </select>
+            </div>
+            <div>
+                <label for="msg">Mesaj</label>
+                <textarea id="msg" rows="4" cols="50"></textarea>
+                <p class="error" id="msg-error"></p>
+            </div>
+            <button type="submit">Trimite</button>
+        </form>
     </article>
 </body>
 </html>
