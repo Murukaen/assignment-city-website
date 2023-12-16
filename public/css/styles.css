@@ -23,6 +23,10 @@ nav > ul > li {
     margin: 10px;
 }
 
+nav .icon {
+    display: none;
+}
+
 .row img {
     height: 240px;
 }
@@ -135,5 +139,13 @@ form > div {
 
     .objective > img {
         max-width: 200px;
+    }
+
+    nav > ul > li {
+        display: none;
+    }
+
+    nav > ul > li.icon {
+        display: inline;
     }
 }
