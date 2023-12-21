@@ -95,6 +95,13 @@ article {
     padding: 0 10px 20px;
 }
 
+button {
+    background-color: #967B7C;
+    border-radius: 25px;
+    border: 1px;
+    padding: 5px 10px;
+}
+
 button[type="submit"] {
     display: block;
     margin-top: 10px;
