@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    background-color: #7AD693;
 }
 
 header {
@@ -16,6 +17,10 @@ header {
 
 #logo {
     height: 60px;
+}
+
+nav {
+    margin-left: auto;
 }
 
 nav > ul > li {
@@ -37,7 +42,10 @@ nav .icon {
 }
 
 .objective > img {
-    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
 }
 
 #accommodations > ul > li {
@@ -91,9 +99,22 @@ article {
     padding: 0 10px 20px;
 }
 
+button {
+    background-color: #967B7C;
+    border-radius: 25px;
+    border: 1px;
+    padding: 5px 10px;
+}
+
 button[type="submit"] {
     display: block;
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    text-align: center;
 }
 
 form > div {
@@ -127,7 +148,7 @@ form > div {
     }
 
     .objective > img {
-        max-width: 400px;
+        max-width: 500px;
     }
 }
 
@@ -138,7 +159,7 @@ form > div {
     }
 
     .objective > img {
-        max-width: 200px;
+        max-width: 300px;
     }
 
     nav > ul > li {
