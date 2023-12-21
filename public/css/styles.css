@@ -19,6 +19,10 @@ header {
     height: 60px;
 }
 
+nav {
+    margin-left: auto;
+}
+
 nav > ul > li {
     display: inline;
     margin: 10px;
