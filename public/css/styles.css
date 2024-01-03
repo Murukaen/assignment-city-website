@@ -158,7 +158,7 @@ form > div {
         max-width: 300px;
     }
 
-    #objectives > .row > [class*="col-"] > p {
+    #objectives > .row > [class*="col-"] > p, #accommodations > .row > [class*="col-"] > p {
         font-weight: bold;
     }
 }
