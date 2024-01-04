@@ -120,10 +120,17 @@ form > div {
 #contact textarea {
     resize: none;
     max-width: 100%;
+    margin-left: 5px;
 }
 
 #contact .error {
     color: red;
+}
+
+#contact > form > div:has(> textarea) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -168,6 +175,15 @@ form > div {
     }
 
     #contact select {
+        width: 100%;
+    }
+
+    #contact > form > div:has(> textarea) {
+        display: block;
+    }
+
+    #contact textarea {
+        margin-left: 0;
         width: 100%;
     }
 }
