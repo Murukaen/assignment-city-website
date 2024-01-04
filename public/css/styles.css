@@ -162,4 +162,12 @@ form > div {
     #objectives > .row > [class*="col-"] > p, #accommodations > .row > [class*="col-"] > p {
         font-weight: bold;
     }
+
+    #contact input {
+        width: 100%;
+    }
+
+    #contact select {
+        width: 100%;
+    }
 }
