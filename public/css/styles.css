@@ -123,10 +123,18 @@ form > div {
 
 #contact textarea {
     resize: none;
+    max-width: 100%;
+    margin-left: 5px;
 }
 
 #contact .error {
     color: red;
+}
+
+#contact > form > div:has(> textarea) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -160,6 +168,27 @@ form > div {
 
     .objective > img {
         max-width: 300px;
+    }
+
+    #objectives > .row > [class*="col-"] > p, #accommodations > .row > [class*="col-"] > p {
+        font-weight: bold;
+    }
+
+    #contact input {
+        width: 100%;
+    }
+
+    #contact select {
+        width: 100%;
+    }
+
+    #contact > form > div:has(> textarea) {
+        display: block;
+    }
+
+    #contact textarea {
+        margin-left: 0;
+        width: 100%;
     }
 
     nav > ul > li {
