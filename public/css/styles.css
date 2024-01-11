@@ -1,3 +1,5 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
 * {
     box-sizing: border-box;
 }
@@ -11,8 +13,12 @@ header {
     background-color: #d57a7a;
     overflow: auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 0 10px;
+}
+
+header > h1 {
+    padding-left: 10px;
 }
 
 #logo {
@@ -23,13 +29,24 @@ nav {
     margin-left: auto;
 }
 
+nav > ul {
+    padding: 0;
+    margin: 0;
+}
+
 nav > ul > li {
     display: inline;
     margin: 10px;
 }
 
-nav .icon {
+nav .open-menu {
     display: none;
+}
+
+header .close-menu {
+    display: none;
+    margin-left: auto;
+    margin-right: 24px;
 }
 
 .row img {
@@ -137,30 +154,46 @@ form > div {
     justify-content: center;
 }
 
-@media only screen and (max-width: 1024px) {
+i.fa-angle-up {
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 1023px) {
     /* For tablets: */
     [class*="col-"] {
         width: 50%;
     }
 
-    nav > ul > li {
-        display: block;
+    nav > ul > li:has(a) {
+        display: none;
+        text-align: center;
+        background-color: #748178;
+        border: 1px solid #573F40;
+        margin: 0;
+        color: white;
+        padding: 10px;
     }
 
-    nav {
-        margin-left: auto;
+    nav > ul > li > a {
+        text-decoration: none;
+        color: inherit;
     }
 
-    nav > ul {
-        padding-left: 0;
+    nav > ul > li.open-menu {
+        display: inline;
+        margin-right: 24px;
     }
 
     .objective > img {
         max-width: 500px;
     }
+
+    nav.drop {
+        width: 100%;
+    }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 424px) {
     /* For mobile phones: */
     [class*="col-"] {
         width: 100%;
@@ -189,13 +222,5 @@ form > div {
     #contact textarea {
         margin-left: 0;
         width: 100%;
-    }
-
-    nav > ul > li {
-        display: none;
-    }
-
-    nav > ul > li.icon {
-        display: inline;
     }
 }

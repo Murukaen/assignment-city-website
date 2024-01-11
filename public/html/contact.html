@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <script type="text/javascript" src="../js/nav.js"></script>
     <script type="text/javascript" src="../js/contact.js"></script>
 </head>
 <body>
     <header>
         <h1>Oradea</h1>
         <img id="logo" src="../media/oradea_logo.png">
+        <div class="close-menu" onclick="window.closeMenu()">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </div>
         <nav>
             <ul>
                 <li> <a href="index.html">Acasa</a> </li>
@@ -18,6 +22,9 @@
                 <li> <a href="accommodation.html">Cazare</a> </li>
                 <li> <a href="events.html">Evenimente</a> </li>
                 <li> <a href="#">Contact</a> </li>
+                <li class="open-menu" onclick="window.openMenu()">
+                    <i class="fa fa-bars"></i>
+                </li>
             </ul>
         </nav>
     </header>
