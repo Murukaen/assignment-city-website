@@ -158,6 +158,34 @@ i.fa-angle-up {
     font-size: 24px;
 }
 
+.slideshow-container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.slide .label {
+    text-align: center;
+    margin-top: 0;
+}
+
+.slideshow-container .go {
+    font-size: 56px;
+    position: absolute;
+    top: 45%;
+    padding: 10px;
+    background-color: #d57a7a99
+}
+
+.slideshow-container .go-right {
+    right: 0;
+}
+
 @media only screen and (max-width: 1023px) {
     /* For tablets: */
     [class*="col-"] {
