@@ -15,6 +15,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    height: 80px;
 }
 
 header > h1 {
@@ -27,26 +28,52 @@ header > h1 {
 
 nav {
     margin-left: auto;
+    height: inherit;
 }
 
 nav > ul {
+    display: flex;
     padding: 0;
     margin: 0;
+    height: inherit;
 }
 
 nav > ul > li {
-    display: inline;
+    display: flex;
     margin: 10px;
+    height: inherit;
+    margin: 0;
+    border: 1px solid black;
+    padding: 0;
+    align-items: center;
+    background-color: #748178;
+    color: white;
+}
+
+nav > ul > li:not(.open-menu):hover, nav > ul > li:has(.active) {
+    background-color: #573F40;
+    cursor: pointer;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 18px 36px;
+    height: 100%;
+    line-height: 42px;
 }
 
 nav .open-menu {
     display: none;
+    background: none;
+    color: black;
+    padding-right: 18px;
 }
 
 header .close-menu {
     display: none;
     margin-left: auto;
-    margin-right: 24px;
+    margin-right: 42px;
 }
 
 .row img {
@@ -192,6 +219,26 @@ i.fa-angle-up {
         width: 50%;
     }
 
+    header {
+        height: auto;
+    }
+
+    nav {
+        margin-right: 0;
+    }
+
+    nav > ul {
+        display: block;
+    }
+
+    nav > ul > li {
+        display: inline;
+    }
+
+    nav > ul > li {
+        border: none;
+    }
+
     nav > ul > li:has(a) {
         display: none;
         text-align: center;
@@ -199,12 +246,14 @@ i.fa-angle-up {
         border: 1px solid #573F40;
         margin: 0;
         color: white;
-        padding: 10px;
     }
 
     nav > ul > li > a {
         text-decoration: none;
         color: inherit;
+        padding: 10px;
+        display: inline-block;
+        width: 100%;
     }
 
     nav > ul > li.open-menu {
