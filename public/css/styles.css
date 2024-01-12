@@ -15,6 +15,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    height: 80px;
 }
 
 header > h1 {
@@ -27,27 +28,44 @@ header > h1 {
 
 nav {
     margin-left: auto;
-    margin-right: 10px;
+    height: inherit;
 }
 
 nav > ul {
+    display: flex;
     padding: 0;
     margin: 0;
+    height: inherit;
 }
 
 nav > ul > li {
-    display: inline;
+    display: flex;
     margin: 10px;
+    height: inherit;
+    margin: 0;
+    border: 1px solid black;
+    align-items: center;
+    padding: 18px 36px;
+    background-color: #748178;
+    color: white;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
 }
 
 nav .open-menu {
     display: none;
+    background: none;
+    color: black;
+    padding-right: 18px;
 }
 
 header .close-menu {
     display: none;
     margin-left: auto;
-    margin-right: 24px;
+    margin-right: 42px;
 }
 
 .row img {
@@ -165,8 +183,24 @@ i.fa-angle-up {
         width: 50%;
     }
 
+    header {
+        height: auto;
+    }
+
     nav {
         margin-right: 0;
+    }
+
+    nav > ul {
+        display: block;
+    }
+
+    nav > ul > li {
+        display: inline;
+    }
+
+    nav > ul > li {
+        border: none;
     }
 
     nav > ul > li:has(a) {
