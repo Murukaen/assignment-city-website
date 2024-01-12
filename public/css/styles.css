@@ -201,6 +201,10 @@ i.fa-angle-up {
     margin-top: 0;
 }
 
+.slide {
+    display: none;
+}
+
 .slideshow-container .go {
     font-size: 56px;
     position: absolute;
