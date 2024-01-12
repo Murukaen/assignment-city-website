@@ -50,7 +50,7 @@ nav > ul > li {
     color: white;
 }
 
-nav > ul > li:not(.open-menu):hover {
+nav > ul > li:not(.open-menu):hover, nav > ul > li:has(.active) {
     background-color: #573F40;
     cursor: pointer;
 }
