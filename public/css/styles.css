@@ -27,6 +27,7 @@ header > h1 {
 
 nav {
     margin-left: auto;
+    margin-right: 10px;
 }
 
 nav > ul {
@@ -162,6 +163,10 @@ i.fa-angle-up {
     /* For tablets: */
     [class*="col-"] {
         width: 50%;
+    }
+
+    nav {
+        margin-right: 0;
     }
 
     nav > ul > li:has(a) {
