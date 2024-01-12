@@ -50,6 +50,11 @@ nav > ul > li {
     color: white;
 }
 
+nav > ul > li:not(.open-menu):hover {
+    background-color: #573F40;
+    cursor: pointer;
+}
+
 nav > ul > li > a {
     text-decoration: none;
     color: white;
