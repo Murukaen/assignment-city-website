@@ -22,4 +22,12 @@
         }
         refresh();
     };
+
+    window.prevSlide = function() {
+        cur -= 1;
+        if (cur < 0) {
+            cur = cnt - 1;
+        }
+        refresh();
+    };
 })();

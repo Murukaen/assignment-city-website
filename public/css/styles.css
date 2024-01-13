@@ -210,7 +210,8 @@ i.fa-angle-up {
     position: absolute;
     top: 45%;
     padding: 10px;
-    background-color: #d57a7a99
+    background-color: #d57a7a99;
+    cursor: pointer;
 }
 
 .slideshow-container .go-right {
