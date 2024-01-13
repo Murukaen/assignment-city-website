@@ -136,7 +136,7 @@ header .close-menu {
 .row::after {
     content: "";
     clear: both;
-display: table;
+    display: table;
 }
 
 article {
@@ -218,6 +218,10 @@ i.fa-angle-up {
     right: 0;
 }
 
+article#objectives > .row {
+    display: none;
+}
+
 @media only screen and (max-width: 1023px) {
     /* For tablets: */
     [class*="col-"] {
@@ -272,6 +276,14 @@ i.fa-angle-up {
 
     nav.drop {
         width: 100%;
+    }
+
+    article#objectives > .row {
+        display: block;
+    }
+
+    article#objectives > .slideshow-container {
+        display: none;
     }
 }
 
